@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    Arial, Helvetica, sans-serif; /*возьмет второй если не доступен первый или любой первый доступный без засечек*/
+}
+nav {
+  width: 100%;
+  background-color: lightblue;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined {
+  cursor: pointer;
+}
+.nav-menu {
+  width: 200px;
+  height: 100vh;
+  background-color: cornflowerblue;
+
+  transform: translatex(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s linear;
+}
+#closeButton {
+  display: block;
+  float: right;
+  margin: 10px;
+}
+.nav-menu__item {
+  margin: 10px;
+  cursor: pointer;
+}
+.nav-menu--open {
+  transform: translateX(0%);
+}
+.nav-menu__item {
+}
